@@ -1,5 +1,5 @@
 if [ -z "${6}" ] 
-  then echo "[model_type (1:CNN, 2:LSTM)] [weights (.caffemodel)] [num_action] [K] [num_step] [gpu]"; exit 0
+  then echo "[model_type (1:CNN, 2:LSTM)] [weights (.caffemodel)] [num_action] [num_input_frames] [num_step] [gpu]"; exit 0
 fi
 
 MODEL=${1}

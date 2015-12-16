@@ -1,5 +1,5 @@
 if [ -z "${9}" ] 
-  then echo "[model_type] [result_prefix] [lr] [num_act] [T] [K] [num_step] [batch_size] [gpu]"; exit 0
+  then echo "[model_type] [result_prefix] [lr] [num_act] [total_time_steps] [num_input_frames] [num_step] [batch_size] [gpu]"; exit 0
 fi
 
 MODEL=${1}
