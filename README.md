@@ -44,7 +44,7 @@ Each line of `act.log` file specifies the action index (starting from 0) chosen 
 [action idx at time 2]
 ...
 ```
-The mean pixel values should be computed over the entire training images and converted to `binaryproto` using Caffe. <br />
+The mean pixel values should be computed over the entire training images and be converted to `binaryproto` using Caffe. <br />
 
 # Training
 The following scripts are provided for training:
@@ -74,11 +74,11 @@ cd [game name]
 ../test.sh [model_type] [weights] [num_action] [num_input_frames] [num_step] [gpu_id] [...]
 ```
 
-  * If `line 31` of `test.py` gives an error, you have to replace the default path with a path for any fonts
+  * If `line 31` of `test.py` gives an error, you have to replace the default font path with a path for any fonts
 ```
 font = ImageFont.truetype('[path for any fonts]', 20)
 ```
 
 # Details
 This repository uses `ADAM` optimization method, while `RMSProp` is used in the original paper.
-We found that `ADAM` converges more quickly and 3-step training is almost enough to get reasonable results.
+We found that `ADAM` converges more quickly, and 3-step training is almost enough to get reasonable results.
