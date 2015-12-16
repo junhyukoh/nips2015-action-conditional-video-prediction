@@ -69,9 +69,9 @@ The following scripts are provided for testing:
 The following command shows how to run the testing script:
 ```
 cd [game name]
-../test_cnn.sh [weights] [num_actions] [num_step] [gpu]
-../test_lstm.sh [weights] [num_actions] [num_step] [gpu]
-../test.sh [model_type] [weights] [num_action] [num_input_frames] [num_step] [gpu] [...]
+../test_cnn.sh [weights] [num_actions] [num_step] [gpu_id]
+../test_lstm.sh [weights] [num_actions] [num_step] [gpu_id]
+../test.sh [model_type] [weights] [num_action] [num_input_frames] [num_step] [gpu_id] [...]
 ```
 
   * If `line 31` of `test.py` gives an error, you have to replace the default path with a path for any fonts
