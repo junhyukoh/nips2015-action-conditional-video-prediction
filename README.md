@@ -1,5 +1,5 @@
 # Introduction
-This repository implements the main algorith of the following paper:
+This repository implements the main algorithm of the following paper ([Project website](https://sites.google.com/a/umich.edu/junhyuk-oh/action-conditional-video-prediction)):
   * Junhyuk Oh, Xiaoxiao Guo, Honglak Lee, Richard Lewis, Satinder Singh, **"Action-Conditional Video Prediction using Deep Networks in Atari Games**"
     _In Advances in Neural Information Processing Systems (NIPS)_, 2015.
 
@@ -57,7 +57,7 @@ The following command shows how to run training scripts:
 cd [game name]
 ../train_cnn.sh [num_actions] [gpu_id]
 ../train_lstm.sh [num_actions] [gpu_id]
-../train.sh 
+../train.sh [model_type] [result_prefix] [lr] [num_act] [...]
 ```
 
 # Testing
@@ -71,6 +71,7 @@ The following command shows how to run the testing script:
 cd [game name]
 ../test_cnn.sh [weights] [num_actions] [num_step] [gpu]
 ../test_lstm.sh [weights] [num_actions] [num_step] [gpu]
+../test.sh [model_type] [weights] [num_action] [num_input_frames] [num_step] [gpu] [...]
 ```
 
   * If `line 31` of `test.py` gives an error, you have to replace the default path with a path for any fonts
