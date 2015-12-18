@@ -16,10 +16,10 @@ year = {2015}
 ```
 
 # Installation
-This repository contains a modified version of Caffe, and uses its python wrapper (pycaffe). <br />
+This repository contains a modified version of Caffe and uses its python wrapper (pycaffe). <br />
 Please check the following instruction to compile Caffe:
 http://caffe.berkeleyvision.org/installation.html. <br />
-After installing the libraries required by Caffe, you should be able to run the following compliation succesfully:
+After installing the libraries required by Caffe, you should be able to compile the code succesfully as follows:
 
 ```
 cd caffe
@@ -76,7 +76,7 @@ cd [game name]
 
   * If `line 31` of `test.py` gives an error, you have to replace the default font path with a path for any fonts
 ```
-font = ImageFont.truetype('[path for any fonts]', 20)
+font = ImageFont.truetype('[path for a font]', 20)
 ```
 
 # Details
